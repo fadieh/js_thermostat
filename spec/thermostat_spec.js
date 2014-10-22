@@ -74,7 +74,11 @@ it ('18 - 24 is yellow', function(){
 	expect(thermostat.colour).toEqual('yellow')
 })
 
-// it ('25 and above is red')
+it ('25 and above is red', function(){
+	thermostat.temperature = 25
+	thermostat.setColour()
+	expect(thermostat.colour).toEqual('red')
+})
 
 
 });

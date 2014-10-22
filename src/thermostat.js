@@ -58,4 +58,6 @@ Thermostat.prototype.setColour = function () {
 	{ this.colour = 'green'}
 	else if ((this.temperature > 17) && (this.temperature < 25))
 	{ this.colour = 'yellow'}
+	else 
+	{ this.colour = 'red'}
 }
