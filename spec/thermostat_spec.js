@@ -62,9 +62,14 @@ it ('can go up to 32 if power saving is off', function(){
 	expect(thermostat.temperature).toEqual(32)
 })
 
-it ('18 or below is green', function(){
+it ('below 18 is green', function(){
 	thermostat.temperature = 17
 	expect(thermostat.colour).toEqual('green')
+})
+
+it ('18 - 25 is yellow', function(){
+	thermostat.temperature = 20
+	expect(thermostat.colour).toEqual('yellow')
 })
 
 });
