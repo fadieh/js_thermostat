@@ -12,6 +12,8 @@ Thermostat.prototype.increaseTemp = function() {
 	{ this.increaseTempBy1() }
 	else if ((this.temperature === 25) && (this.powerSaver === true)) 
 	{ this.powerSaverMaxTemp() }
+	else if ((this.temperature ===25) && (this.powerSaver === false))
+	{ this.increaseTempBy1() }
 	else this.maxTemperatureReached()
 };
 
@@ -23,10 +25,12 @@ Thermostat.prototype.decreaseTemp = function() {
 
 Thermostat.prototype.increaseTempBy1 = function () {
 	this.temperature = this.temperature + 1
+	this.setColour()
 }
 
 Thermostat.prototype.decreaseTempby1 = function() {
 	this.temperature = this.temperature - 1
+	this.setColour()
 }
 
 Thermostat.prototype.powerSaverMaxTemp = function () {
