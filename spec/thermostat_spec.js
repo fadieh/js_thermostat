@@ -21,4 +21,21 @@ it ('can decrease the temperature by 1', function(){
 	expect(thermostat.temperature).toEqual(20)
 });
 
+it ('minimum temperature is 10', function(){
+	thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+		thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+		thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+		thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+		thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+
+	
+	expect(thermostat.temperature).toEqual(10)
+});
+
 });

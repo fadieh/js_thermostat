@@ -5,9 +5,12 @@ function Thermostat() {
 };
 
 Thermostat.prototype.increaseTemp = function() {
-	this.temperature = this.temperature + 1
+	return this.temperature = this.temperature + 1
+	
 };
 
 Thermostat.prototype.decreaseTemp = function() {
-	this.temperature = this.temperature - 1
+	if (this.temperature > 10)
+	return this.temperature = this.temperature - 1
+	else this.temperature = 10
 };
