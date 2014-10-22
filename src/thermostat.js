@@ -6,8 +6,12 @@ function Thermostat() {
 };
 
 Thermostat.prototype.increaseTemp = function() {
-	if (this.temperature < 32)
-	return this.temperature = this.temperature + 1
+	if ((this.temperature < 32) && (this.powerSaver === false)) 
+	{ return this.temperature = this.temperature + 1 }
+	else if ((this.temperature < 25) && (this.powerSaver === true))
+	{ return this.temperature = this.temperature + 1}
+	else if ((this.temperature === 25) && (this.powerSaver === true)) 
+	{ return this.temperature = 25 }
 	else this.temperature = 32	
 };
 

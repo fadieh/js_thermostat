@@ -9,6 +9,7 @@ it ('it will have a range of temperatures', function(){
 });
 
 it ('can increase the temperature by 1', function(){
+	thermostat.temperature = 20
 	thermostat.increaseTemp(1)
 	expect(thermostat.temperature).toEqual(21)
 });
@@ -52,10 +53,10 @@ it ('can turn power saver back on', function(){
 	expect(thermostat.powerSaver).toEqual(true)
 })
 
-// it ('can only go up to 25 if power saving is on', function(){
-// 	thermostat.temperature = 25
-// 	thermostat.increaseTemp()
-// 	expect(thermostat.temperature).toEqual(25)
-// })
+it ('can only go up to 25 if power saving is on', function(){
+	thermostat.temperature = 25
+	thermostat.increaseTemp()
+	expect(thermostat.temperature).toEqual(25)
+})
 
 });
