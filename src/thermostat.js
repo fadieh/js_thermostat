@@ -2,7 +2,7 @@ function Thermostat() {
 
 	this.powerSaver = true
 	this.temperature = 20
-	this.colour = this.designateColour
+	// this.colour = this.designateColour
 };
 
 Thermostat.prototype.increaseTemp = function() {
@@ -53,10 +53,10 @@ Thermostat.prototype.turnPowerSaverOn = function () {
 	this.powerSaver = true
 }
 
-Thermostat.prototype.designateColour = function () {
-	if (this.temperature < 18) 
-	{ return this.colour = 'green' }
-	else if ((this.temperature > 18) && (this.temperature < 26 ))
-	{ return this.colour = 'yellow' }
-	else this.colour = 'red'
-}
+// Thermostat.prototype.designateColour = function () {
+// 	if (this.temperature < 18) 
+// 	{ return this.colour = 'green' }
+// 	else if ((this.temperature > 18) && (this.temperature < 26 ))
+// 	{ return this.colour = 'yellow' }
+// 	else this.colour = 'red'
+// }
