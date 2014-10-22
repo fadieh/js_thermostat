@@ -6,6 +6,10 @@ describe ('Thermostat', function () {
 
 it ('it will have a range of temperatures', function(){
 	expect(thermostat.temperature.length).toEqual(13)
-})
+});
+
+it ('should be 20 degrees at the start', function(){
+	expect(thermostat.startTemperature).toEqual(20)
+});
 
 });
