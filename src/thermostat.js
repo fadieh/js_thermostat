@@ -7,18 +7,38 @@ function Thermostat() {
 
 Thermostat.prototype.increaseTemp = function() {
 	if ((this.temperature < 32) && (this.powerSaver === false)) 
-	{ return this.temperature = this.temperature + 1 }
+	{ this.increaseTempBy1() }
 	else if ((this.temperature < 25) && (this.powerSaver === true))
-	{ return this.temperature = this.temperature + 1}
+	{ this.increaseTempBy1() }
 	else if ((this.temperature === 25) && (this.powerSaver === true)) 
-	{ return this.temperature = 25 }
-	else this.temperature = 32	
+	{ this.powerSaverMaxTemp() }
+	else this.maxTemperature()
 };
+
+Thermostat.prototype.increaseTempBy1 = function () {
+	this.temperature = this.temperature + 1
+}
+
+Thermostat.prototype.decreaseTempby1 = function() {
+	this.temperature = this.temperature - 1
+}
+
+Thermostat.prototype.powerSaverMaxTemp = function () {
+	this.temperature = 25
+}
+
+Thermostat.prototype.minimumTemp = function () {
+	this.temperature = 10
+}
+
+Thermostat.prototype.maxTemperature = function () {
+	this.temperature = 32
+}
 
 Thermostat.prototype.decreaseTemp = function() {
 	if (this.temperature > 10)
-	return this.temperature = this.temperature - 1
-	else this.temperature = 10
+	{ this.decreaseTempby1() }
+	else this.minimumTemp()
 };
 
 Thermostat.prototype.resetTemperature = function () {
