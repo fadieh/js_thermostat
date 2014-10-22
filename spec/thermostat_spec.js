@@ -24,13 +24,13 @@ it ('can decrease the temperature by 1', function(){
 it ('minimum temperature is 10', function(){
 	thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
-		thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
-		thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
-		thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
-		thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
+	thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
 	thermostat.decreaseTemp(1)
 	expect(thermostat.temperature).toEqual(10)
@@ -51,6 +51,10 @@ it ('maximum temperature is 32', function(){
 		thermostat.increaseTemp(1)
 		thermostat.increaseTemp(1)
 		expect(thermostat.temperature).toEqual(32)
+});
+
+it ('power saving is on by default', function(){
+	expect(thermostat.powerSaver).toEqual(true)
 });
 
 });
