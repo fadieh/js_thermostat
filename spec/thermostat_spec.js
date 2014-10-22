@@ -59,4 +59,11 @@ it ('can only go up to 25 if power saving is on', function(){
 	expect(thermostat.temperature).toEqual(25)
 })
 
+it ('can go up to 32 if power saving is off', function(){
+	thermostat.powerSaver = false
+	thermostat.temperature = 31
+	thermostat.increaseTemp()
+	expect(thermostat.temperature).toEqual(32)
+})
+
 });
