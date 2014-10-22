@@ -1,3 +1,5 @@
+/* DESIGNED FOR THE SAMSUNG GALAXY S4 */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,19 +7,20 @@
 
 body {
 	background-color: #00A196;
+	width: 360px;
+	height: 640px ;
 }
 
 #title {
 	font-family: 'Raleway', sans-serif;
 	color: white;
 	font-weight: 100;
-	text-align: center;
-	position: relative;
-	top: 60px;
 	font-size: 40px;
-	padding: 20px;
-	border-left: hidden;
-	border-right: hidden;
+	text-align: center;
+	position: fixed;
+	bottom: 71px;
+	left: 0;
+	right: 0;
 }
 
 #titlepad {
@@ -29,21 +32,41 @@ body {
 	font-family: 'Oswald', sans-serif;
 	color: white;
 	text-align: center;
-	top: 170px;
-	position: relative;
-	z-index: 1;
+	position: fixed;
+	width:100%;
+	bottom: 426px;
+	background-color: #00403B;
+}
+
+#buttons {
+	width: 20%;
+	margin: 0 auto;
+	top: 236px;
+	left: 138px;
+	position: fixed;
+}
+
+#up {
+	height: 84px;
+	width: 84px;
+	margin: 0 auto;
+}
+
+#down {
+	height: 84px;
+	width: 84px;
 }
 
 #button {
 	height: 40px;
 	width: 169px;
 	background-color: #007F77;
-	position: relative;
 	border-bottom-color: #00403B;
 	border-bottom-width: 6px;
 	border-bottom-style: solid;
-	top: 290px;
-	left: 42%;
+	position: fixed;
+	top: 426px;
+	left: 95.5px;
 }
 
 #resettext {
@@ -57,12 +80,7 @@ body {
 #circle {
 	width: 273px;
 	height: 273px;
-	border-color: #FF3000;
-	border-width: 7px;
-	border-style: solid;
 	background-color: #FF6440;
-	position: relative;
-	top: -110px;
-	left: 469px;
 	z-index: 0;
+	visibility: hidden;
 }
