@@ -8,8 +8,7 @@ function Thermostat() {
 Thermostat.prototype.increaseTemp = function() {
 	if (this.temperature < 32)
 	return this.temperature = this.temperature + 1
-	else this.temperature = 32
-	
+	else this.temperature = 32	
 };
 
 Thermostat.prototype.decreaseTemp = function() {
