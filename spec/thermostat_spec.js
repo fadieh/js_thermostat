@@ -68,4 +68,10 @@ it ('can turn power saver off', function(){
 	expect(thermostat.powerSaver).toEqual(false)
 });
 
+it ('can turn power saver back on', function(){
+	thermostat.turnPowerSaverOff()
+	thermostat.turnPowerSaverOn()
+	expect(thermostat.powerSaver).toEqual(true)
+})
+
 });
