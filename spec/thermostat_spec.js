@@ -61,6 +61,11 @@ it ('can reset the temperature back to 20', function() {
 	thermostat.increaseTemp(1)
 	thermostat.resetTemperature()
 	expect(thermostat.temperature).toEqual(20)
-})
+});
+
+it ('can turn power saver off', function(){
+	thermostat.turnPowerSaverOff()
+	expect(thermostat.powerSaver).toEqual(false)
+});
 
 });
