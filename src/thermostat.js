@@ -55,6 +55,7 @@ Thermostat.prototype.turnPowerSaverOff = function () {
 
 Thermostat.prototype.turnPowerSaverOn = function () {
 	this.powerSaver = true
+	this.powerSaverMaxTemp()
 }
 
 Thermostat.prototype.setColour = function () {
