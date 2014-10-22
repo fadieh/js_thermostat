@@ -4,10 +4,6 @@ describe ('Thermostat', function () {
 		thermostat = new Thermostat
 	});
 
-it ('it will have a range of temperatures', function(){
-	expect(thermostat.temperatureRange.length).toEqual(23)
-});
-
 it ('can increase the temperature by 1', function(){
 	thermostat.temperature = 20
 	thermostat.increaseTemp(1)
@@ -64,6 +60,11 @@ it ('can go up to 32 if power saving is off', function(){
 	thermostat.temperature = 31
 	thermostat.increaseTemp()
 	expect(thermostat.temperature).toEqual(32)
+})
+
+it ('18 or below is green', function(){
+	thermostat.temperature = 17
+	expect(thermostat.colour).toEqual('green')
 })
 
 });
