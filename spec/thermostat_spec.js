@@ -57,4 +57,10 @@ it ('power saving is on by default', function(){
 	expect(thermostat.powerSaver).toEqual(true)
 });
 
+it ('can reset the temperature back to 20', function() {
+	thermostat.increaseTemp(1)
+	thermostat.resetTemperature()
+	expect(thermostat.temperature).toEqual(20)
+})
+
 });

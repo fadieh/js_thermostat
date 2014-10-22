@@ -17,3 +17,7 @@ Thermostat.prototype.decreaseTemp = function() {
 	return this.temperature = this.temperature - 1
 	else this.temperature = 10
 };
+
+Thermostat.prototype.resetTemperature = function () {
+	return this.temperature = 20
+}
