@@ -73,6 +73,7 @@ Thermostat.prototype.setColour = function () {
 
 Thermostat.prototype.convertToFahrenheit = function () {
 	this.temperature = this.temperature * 9 / 5 + 32 + "°F"
+	this.type = 'fahrenheit'
 };
 
 Thermostat.prototype.convertToCelcius = function () {

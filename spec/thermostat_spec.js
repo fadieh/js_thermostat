@@ -92,6 +92,11 @@ it ('has a type of celcius when started', function(){
 	expect(thermostat.type).toEqual('celcius')
 });
 
+it ('has a type of fahrenheit', function(){
+	thermostat.convertToFahrenheit()
+	expect(thermostat.type).toEqual('fahrenheit')
+});
+
 it ('can turn celcius to fahrenheit', function(){
 	thermostat.temperature = 20
 	thermostat.convertToFahrenheit()
