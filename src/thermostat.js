@@ -77,6 +77,8 @@ Thermostat.prototype.convertToFahrenheit = function () {
 };
 
 Thermostat.prototype.convertToCelcius = function () {
-	this.temperature = (this.temperature - 32) * 5 / 9 + "°C"
+	if (this.type === 'fahrenheit')
+	{ this.temperature = (this.temperature - 32) * 5 / 9 + "°C" }
+	else this.temperature = this.temperature
 	this.type = 'celcius'
 };
