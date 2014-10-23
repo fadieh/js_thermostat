@@ -108,8 +108,16 @@ body {
 
 }
 
-#temperature {
-
+.increase_temperature {
+	position: fixed;
+	top: 500px;
+	left: 0px;
+	font-size: 100px;
+	color: black;
+	text-align: center;
+	z-index: 100;
+	text-decoration: none;
+	color: #027F76;
 }
 
 #temp {
