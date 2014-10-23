@@ -5,7 +5,8 @@ function ThermostatView(element) {
 	// now can create methods that'll do the binding for us. binding methods to html.
 	this.bindTo('.increase_temperature', this.thermostat, this.thermostat.increaseTemp);
 	this.bindTo('.decrease_temperature', this.thermostat, this.thermostat.decreaseTemp);
-	this.bindTo('.reset', this.thermostat, this.thermostat.resetTemperature)
+	this.bindTo('.reset', this.thermostat, this.thermostat.resetTemperature);
+	this.bindTo('.powersaver', this.thermostat, this.thermostat.turnPowerSaverOff);
 
 };
 
