@@ -42,7 +42,7 @@ body {
 	height: 313px;
 	bottom: 213px;
 	position: fixed;
-	width: 100%;
+	width: 50%;
 	background-color: #027F76;
 	z-index: 0;
 }
@@ -127,21 +127,22 @@ body {
 
 .reset {
 	position: fixed;
-	bottom: 220px;
-	right: 152px;
+	bottom: 213px;
+	right: 25px;
 	font-size: 30px;
+	width: 40%;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
 	text-align: center;
 	z-index: 100;
 	text-decoration: none;
-	color: white;
+	color: #01403B;
 }
 
 .powersaveroff {
 	position: fixed;
-	bottom: 130px;
-	right: 60px;
+	bottom: 355px;
+	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
@@ -149,13 +150,13 @@ body {
 	z-index: 100;
 	text-decoration: none;
 	color: #01403B;
-	width: 30%;
+	width: 40%;
 }
 
 .powersaveron {
 	position: fixed;
-	bottom: 130px;
-	left: 60px;
+	bottom: 284px;
+	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
@@ -163,7 +164,7 @@ body {
 	z-index: 100;
 	text-decoration: none;
 	color: #01403B;
-		width: 30%;
+		width: 40%;
 }
 
 #temp {
@@ -176,5 +177,5 @@ body {
 	font-weight: 200;
 	z-index: 100;
 	top: 253px;
-	left: 115px;
+	left: 35px;
 }
