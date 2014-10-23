@@ -97,6 +97,12 @@ it ('has a type of fahrenheit', function(){
 	expect(thermostat.type).toEqual('fahrenheit')
 });
 
+it ('has the type, celcius, when converted from fahrenheit', function(){
+	thermostat.type = 'fahrenheit'
+	thermostat.convertToCelcius()
+	expect(thermostat.type).toEqual('celcius')
+})
+
 it ('can turn celcius to fahrenheit', function(){
 	thermostat.temperature = 20
 	thermostat.convertToFahrenheit()
