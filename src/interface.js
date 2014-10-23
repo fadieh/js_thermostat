@@ -3,12 +3,12 @@ function ThermostatView(element) {
 	this.thermostat = new Thermostat;
 	this.el.text(this.thermostat.temperature);
 	// now can create methods that'll do the binding for us. binding methods to html.
-	this.bindTo('.increase_temperature', this.thermostat.increaseTemp());
+	this.bindTo('.increase_temperature', this.thermostat, this.thermostat.increaseTemp);
 };
 
-ThermostatView.prototype.bindTo = function(selector, func) {
+ThermostatView.prototype.bindTo = function(selector, obj, func) {
 	$(selector).on('click', function() {
-		$('.temp').text(func); 
+		$('.temp').text(func.call(obj)); 
 	});
 };
 
