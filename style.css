@@ -110,11 +110,12 @@ body {
 
 .increase_temperature {
 	position: fixed;
+	text-shadow: 1px 1px 1px #027F76;
 	top: 500px;
-	left: 85px;
+	left: 105px;
 	font-size: 100px;
-	font-family: "Helvetica Neue";
-	font-weight: lighter;
+	font-family: "Questrial";
+	font-weight: 300;
 	text-align: center;
 	z-index: 100;
 	text-decoration: none;
@@ -123,13 +124,15 @@ body {
 
 .decrease_temperature {
 	position: fixed;
-	top: 500px;
-	right: 85px;
+	top: 504px;
+	right: 105px;
+	text-shadow: 1px 1px 1px #027F76;
 	font-size: 100px;
-	font-family: "Helvetica Neue";
+	font-family: "Questrial";
 	font-weight: lighter;
 	text-align: center;
 	z-index: 100;
+	font-weight: 300;
 	text-decoration: none;
 	color: #027F76;
 }
@@ -137,20 +140,20 @@ body {
 .reset {
 	position: fixed;
 	bottom: 220px;
-	right: 145px;
+	right: 152px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
 	text-align: center;
 	z-index: 100;
 	text-decoration: none;
-	color: #01403B;
+	color: white;
 }
 
 .powersaveroff {
 	position: fixed;
-	bottom: 220px;
-	right: 145px;
+	bottom: 130px;
+	right: 60px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
@@ -158,12 +161,13 @@ body {
 	z-index: 100;
 	text-decoration: none;
 	color: #01403B;
+	width: 30%;
 }
 
 .powersaveron {
 	position: fixed;
-	bottom: 320px;
-	right: 145px;
+	bottom: 130px;
+	left: 60px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
@@ -171,6 +175,7 @@ body {
 	z-index: 100;
 	text-decoration: none;
 	color: #01403B;
+		width: 30%;
 }
 
 #temp {
@@ -180,7 +185,7 @@ body {
 	position: fixed;
 	bottom: 400px;
 	font-family: "Helvetica Neue";
-	font-weight: 100;
+	font-weight: 200;
 	z-index: 100;
 	top: 253px;
 	left: 115px;
