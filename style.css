@@ -111,9 +111,23 @@ body {
 .increase_temperature {
 	position: fixed;
 	top: 500px;
-	left: 0px;
+	left: 85px;
 	font-size: 100px;
-	color: black;
+	font-family: "Helvetica Neue";
+	font-weight: lighter;
+	text-align: center;
+	z-index: 100;
+	text-decoration: none;
+	color: #027F76;
+}
+
+.decrease_temperature {
+	position: fixed;
+	top: 500px;
+	right: 85px;
+	font-size: 100px;
+	font-family: "Helvetica Neue";
+	font-weight: lighter;
 	text-align: center;
 	z-index: 100;
 	text-decoration: none;
