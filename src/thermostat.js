@@ -50,7 +50,7 @@ Thermostat.prototype.maxTemperatureReached = function () {
 };
 
 Thermostat.prototype.resetTemperature = function () {
-	this.temperature = 20
+	return this.temperature = 20
 };
 
 Thermostat.prototype.turnPowerSaverOff = function () {

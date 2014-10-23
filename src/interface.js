@@ -5,26 +5,21 @@ function ThermostatView(element) {
 	// now can create methods that'll do the binding for us. binding methods to html.
 	this.bindTo('.increase_temperature', this.thermostat, this.thermostat.increaseTemp);
 	this.bindTo('.decrease_temperature', this.thermostat, this.thermostat.decreaseTemp);
+	this.bindTo('.reset', this.thermostat, this.thermostat.resetTemperature)
+
 };
 
 ThermostatView.prototype.bindTo = function(selector, obj, func) {
 	$(selector).on('click', function() {
-		$('.temp').text(func.call(obj)); 
+	$('.temp').text(func.call(obj)); 
 	});
 };
 
 $(document).ready(function() {
 	new ThermostatView('.temp')
 
-	// $('.temp').text(thermostat.temperature);
+// We are binding an on click event on a selector whatever selector it is. Could be H1 and we’re going to replace on the H1, the text with the function call on the object we are passing through. Meaning, 
 
-	// $('.increase_temperature').on('click', function() {
-	// $('.temp').text(thermostat.increaseTemp()); });
+// So we’re going to bind on this element (+ button) this function of the thermostat. Meaning when you click on that thing, here. We’re going to call that function which is inside of the thermostat object. 
 
-	// $('.decrease_temperature').on('click', function() {
-	// $('.temp').text(thermostat.decreaseTemp()); });
-
-	// $('.reset').on('click', function() {
-	// thermostat.resetTemperature();
-	// $('.temp').text(thermostat.temperature); });
 });
