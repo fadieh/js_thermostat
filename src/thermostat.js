@@ -3,6 +3,7 @@ function Thermostat() {
 	this.powerSaver = true
 	this.temperature = 20
 	this.colour = 'yellow'
+	this.type = 'celcius'
 
 };
 

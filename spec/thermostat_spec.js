@@ -88,6 +88,10 @@ it ('if turn power saver on 26 or above, reverts back to 25.', function(){
 
 })
 
+it ('has a type of celcius when started', function(){
+	expect(thermostat.type).toEqual('celcius')
+});
+
 it ('can turn celcius to fahrenheit', function(){
 	thermostat.temperature = 20
 	thermostat.convertToFahrenheit()
