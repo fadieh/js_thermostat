@@ -38,7 +38,7 @@ Thermostat.prototype.decreaseTempby1 = function() {
 };
 
 Thermostat.prototype.powerSaverMaxTemp = function () {
-	this.temperature = 25
+	return this.temperature = 25
 };
 
 Thermostat.prototype.minimumTempReached = function () {
@@ -60,6 +60,7 @@ Thermostat.prototype.turnPowerSaverOff = function () {
 Thermostat.prototype.turnPowerSaverOn = function () {
 	this.powerSaver = true
 	this.powerSaverMaxTemp()
+	return this.temperature
 };
 
 Thermostat.prototype.setColour = function () {

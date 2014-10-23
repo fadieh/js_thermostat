@@ -6,7 +6,8 @@ function ThermostatView(element) {
 	this.bindTo('.increase_temperature', this.thermostat, this.thermostat.increaseTemp);
 	this.bindTo('.decrease_temperature', this.thermostat, this.thermostat.decreaseTemp);
 	this.bindTo('.reset', this.thermostat, this.thermostat.resetTemperature);
-	this.bindTo('.powersaver', this.thermostat, this.thermostat.turnPowerSaverOff);
+	this.bindTo('.powersaveroff', this.thermostat, this.thermostat.turnPowerSaverOff);
+	this.bindTo('.powersaveron', this.thermostat, this.thermostat.turnPowerSaverOn);
 
 };
 
