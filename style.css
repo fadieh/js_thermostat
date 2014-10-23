@@ -48,6 +48,22 @@ body {
 	z-index:0;
 }
 
+#second {
+	height: 213px;
+	top: 213px;
+	position: fixed;
+	width: 100%;
+	background-color: #027F76;
+}
+
+#three {
+	height: 213px;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+}
+
 
 #button {
 	height: 40px;
@@ -76,4 +92,41 @@ font-weight: lighter;
 	background-color: #FF6440;
 	z-index: 0;
 	visibility: hidden;
+}
+
+#up {
+	bottom: 0px;
+	position: fixed;
+	height: 84px;
+	width: 84px;
+	z-index: 10;
+	left: 96px;
+}
+
+#down {
+	bottom: 0px;
+	position: fixed;
+	height: 84px;
+	width: 84px;
+	z-index: 10;
+	left: 179px;
+	/* 213 is a third of the height*/
+	/* 84 is the height of the button */
+	/* 64.5 is the padding thats needed */
+	/* 64.5 + the position of the second frame, then the buttons are in the center */
+	/* these 2 buttons are taking up 168px */
+
+}
+
+#temp {
+	font-size: 100px;
+	text-align: center;
+	color: white;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	font-family: "Helvetica Neue";
+	font-weight: lighter;
+	z-index: 100;
+
 }

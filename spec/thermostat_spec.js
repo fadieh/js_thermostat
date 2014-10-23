@@ -88,5 +88,17 @@ it ('if turn power saver on 26 or above, reverts back to 25.', function(){
 
 })
 
+it ('can turn celcius to fahrenheit', function(){
+	thermostat.temperature = 20
+	thermostat.convertToFahrenheit()
+	expect(thermostat.temperature).toEqual(68+'°F')
+})
+
+it ('can turn fahrenheit to celcius', function(){
+	thermostat.temperature = 68
+	thermostat.convertToCelcius()
+	expect(thermostat.temperature).toEqual(20+'°C')
+})
+
 
 });

@@ -3,6 +3,7 @@ function Thermostat() {
 	this.powerSaver = true
 	this.temperature = 20
 	this.colour = 'yellow'
+
 };
 
 Thermostat.prototype.increaseTemp = function() {
@@ -65,4 +66,12 @@ Thermostat.prototype.setColour = function () {
 	{ this.colour = 'yellow'}
 	else 
 	{ this.colour = 'red'}
+}
+
+Thermostat.prototype.convertToFahrenheit = function () {
+	this.temperature = this.temperature * 9 / 5 + 32 + "°F"
+}
+
+Thermostat.prototype.convertToCelcius = function () {
+	this.temperature = (this.temperature - 32) * 5 / 9 + "°C"
 }
