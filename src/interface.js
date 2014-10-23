@@ -4,6 +4,7 @@ function ThermostatView(element) {
 	this.el.text(this.thermostat.temperature);
 	// now can create methods that'll do the binding for us. binding methods to html.
 	this.bindTo('.increase_temperature', this.thermostat, this.thermostat.increaseTemp);
+	this.bindTo('.decrease_temperature', this.thermostat, this.thermostat.decreaseTemp);
 };
 
 ThermostatView.prototype.bindTo = function(selector, obj, func) {
