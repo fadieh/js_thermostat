@@ -116,17 +116,17 @@ it ('can turn fahrenheit to celcius', function(){
 	expect(thermostat.temperature).toEqual(20+'°C')
 })
 
-});
-
-it ('cant convert to celcius when its already celcius', function(){
+it ('cant convert to celcius when its already celcius', function() {
 	thermostat.temperature = 25
 	thermostat.convertToCelcius()
 	expect(thermostat.temperature).toEqual(25)
 });
 
-it ('cant convert to fahrenheit when its already fahrenheit', function(){
+it ('cant convert to fahrenheit when its already fahrenheit', function() {
 	thermostat.temperature = 30
 	thermostat.type = 'fahrenheit'
 	thermostat.convertToFahrenheit()
 	expect(thermostat.temperature).toEqual(30)
+});
+
 });
