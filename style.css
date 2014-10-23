@@ -23,6 +23,7 @@ body {
 	right: 0;
 	background-color: #01403B;
 	z-index: 2;
+	text-shadow: 2px 2px 2px black;
 }
 
 #titlepad {
@@ -114,7 +115,6 @@ body {
 	position: fixed;
 	top: 504px;
 	right: 105px;
-	text-shadow: 1px 1px 1px #027F76;
 	font-size: 100px;
 	font-family: "Questrial";
 	font-weight: lighter;
@@ -127,7 +127,7 @@ body {
 
 .reset {
 	position: fixed;
-	bottom: 213px;
+	bottom: 230px;
 	right: 25px;
 	font-size: 30px;
 	width: 40%;
@@ -141,7 +141,7 @@ body {
 
 .powersaveroff {
 	position: fixed;
-	bottom: 355px;
+	bottom: 373px;
 	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
@@ -155,7 +155,7 @@ body {
 
 .powersaveron {
 	position: fixed;
-	bottom: 284px;
+	bottom: 301px;
 	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
