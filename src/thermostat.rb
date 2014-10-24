@@ -1,8 +1,11 @@
 require 'sinatra/base'
+require 'net/http'
+
+set :public_dir, Proc.new { File.join(root, "src")}
 
 class thermostat < Sinatra::Base
   get '/' do
-    'Hello thermostat!'
+    erb :index
   end
 
   # start the server if ruby file executed directly
