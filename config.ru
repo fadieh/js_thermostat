@@ -1,4 +1,3 @@
-require 'rubygems'
-require File.join(File.dirname(__FILE__), 'src/thermostat.rb')
+require_relative './thermostat.rb'
 
-run thermostat
+Sinatra::Application.run!

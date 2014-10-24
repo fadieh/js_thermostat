@@ -65,37 +65,12 @@ body {
 	top: 9px;
 }
 
-#circle {
-	width: 273px;
-	height: 273px;
-	background-color: #FF6440;
-	z-index: 0;
-	visibility: hidden;
-}
-
-#up {
-	bottom: 0px;
-	position: fixed;
-	height: 84px;
-	width: 84px;
-	z-index: 10;
-	left: 96px;
-}
-
-#down {
-	bottom: 0px;
-	position: fixed;
-	height: 84px;
-	width: 84px;
-	z-index: 10;
-	left: 179px;
 	/* 213 is a third of the height*/
 	/* 84 is the height of the button */
 	/* 64.5 is the padding thats needed */
 	/* 64.5 + the position of the second frame, then the buttons are in the center */
 	/* these 2 buttons are taking up 168px */
 
-}
 
 .increase_temperature {
 	position: fixed;
@@ -137,6 +112,16 @@ body {
 	z-index: 100;
 	text-decoration: none;
 	color: #01403B;
+}
+
+.circle {
+	position: fixed;
+	bottom: 240px;
+	left: 79.5px;
+	background-color: #CCAA18;
+	height: 19px;
+	width: 19px;
+	border-radius: 50%;
 }
 
 .powersaveroff {
