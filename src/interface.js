@@ -8,20 +8,25 @@ function ThermostatView(element) {
 	this.bindTo('.reset', this.thermostat, this.thermostat.resetTemperature);
 	this.bindTo('.powersaveroff', this.thermostat, this.thermostat.turnPowerSaverOff);
 	this.bindTo('.powersaveron', this.thermostat, this.thermostat.turnPowerSaverOn);
-
 };
+
+
 
 ThermostatView.prototype.bindTo = function(selector, obj, func) {
 	$(selector).on('click', function() {
-	$('.temp').text(func.call(obj)); 
+	$('.temp').text(func.call(obj));
 	});
 };
+
+ThermostatView.prototype.changeColour = function(selector, obj, func) {
+	$(selector).on('')
+}
 
 $(document).ready(function() {
 	new ThermostatView('.temp')
 
-// We are binding an on click event on a selector whatever selector it is. Could be H1 and we’re going to replace on the H1, the text with the function call on the object we are passing through. Meaning, 
+// We are binding an on click event on a selector whatever selector it is. Could be H1 and we’re going to replace on the H1, the text with the function call on the object we are passing through. Meaning,
 
-// So we’re going to bind on this element (+ button) this function of the thermostat. Meaning when you click on that thing, here. We’re going to call that function which is inside of the thermostat object. 
+// So we’re going to bind on this element (+ button) this function of the thermostat. Meaning when you click on that thing, here. We’re going to call that function which is inside of the thermostat object.
 
 });

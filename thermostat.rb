@@ -1,15 +1,16 @@
-require 'sinatra/base'
+require 'sinatra'
+require 'json'
 require 'net/http'
 
-set :public_dir, Proc.new { File.join(root, "src")}
+set :public_folder, settings.root + '/public/'
+set :views, settings.root + '/views/'
 
-class Thermostat < Sinatra::Base
+get '/' do
+  erb :index
+end
 
-  get '/' do
-    erb :index
-  end
-
-  # start the server if ruby file executed directly
-  # run! if app_file == $0
-# end
+get '/weather' do
+  url = 'http://api.openweathermap.org/data/2.5/find?q=London&units=metric'
+  resp = Net::HTTP.get_response(URI.parse(url))
+  data = resp.body
 end
