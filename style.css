@@ -1,4 +1,4 @@
-/* DESIGNED FOR THE SAMSUNG GALAXY S4 */
+ /* DESIGNED FOR THE SAMSUNG GALAXY S4 */
 
 * {
 	padding: 0;
@@ -6,7 +6,6 @@
 }
 
 body {
-
 	width: 360px;
 	height: 640px ;
 }
@@ -23,7 +22,6 @@ body {
 	right: 0;
 	background-color: #01403B;
 	z-index: 2;
-	text-shadow: 2px 2px 2px black;
 }
 
 #titlepad {
@@ -34,13 +32,13 @@ body {
 	top: 0px;
 	width: 100%;
 	position: fixed;
-	height: 213px;
+	height: 214px;
 	background-color: #01403B;
 	z-index:1;
 }
 
 #second {
-	height: 313px;
+	height: 213px;
 	bottom: 213px;
 	position: fixed;
 	width: 50%;
@@ -115,6 +113,7 @@ body {
 	position: fixed;
 	top: 504px;
 	right: 105px;
+	text-shadow: 1px 1px 1px #027F76;
 	font-size: 100px;
 	font-family: "Questrial";
 	font-weight: lighter;
@@ -127,7 +126,7 @@ body {
 
 .reset {
 	position: fixed;
-	bottom: 230px;
+	bottom: 213px;
 	right: 25px;
 	font-size: 30px;
 	width: 40%;
@@ -141,7 +140,7 @@ body {
 
 .powersaveroff {
 	position: fixed;
-	bottom: 373px;
+	bottom: 355px;
 	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
@@ -155,7 +154,7 @@ body {
 
 .powersaveron {
 	position: fixed;
-	bottom: 301px;
+	bottom: 284px;
 	right: 25px;
 	font-size: 30px;
 	font-family: "Helvetica Neue";
@@ -178,4 +177,14 @@ body {
 	z-index: 100;
 	top: 253px;
 	left: 35px;
+}
+
+.outsidetemp {
+	color: white;
+	left: 10px;
+	top: 10px;
+	position: fixed;
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	font-size: 20px;
 }
