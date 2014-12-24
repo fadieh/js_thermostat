@@ -14,10 +14,13 @@
 
 <header>
 
+<section id="third">
 <section id="titlepad">
 <h1 id="title">ThermoRat&deg</h1>
+<h5 class="outsidetemp"></h5>
+<h5 class="outsideweather"></h5>
 </section>
-
+</section>
 </header>
 
 <main>
@@ -42,8 +45,6 @@
 </section>
 	<!-- <h3 id="resettext">31 &deg<h3> -->
 
-<div id="third">
-	</div>
 
 <div id="second">
 </div>
@@ -59,6 +60,18 @@
 <script src="jquery.js" type="text/javascript"></script>
 <script src="./src/thermostat.js" type="text/javascript"></script>
 <script src="./src/interface.js" type="text/javascript"></script>
+<script>
+$(document).ready(function() {
+	$.getJSON('http://www.myweather2.com/developer/forecast.ashx?uac=lPJ6yq.VXI&output=json&query=me1', function(data) {
+
+		$('.outsidetemp').text((data['weather']['curren_weather'][0]['temp']));
+		$('.outsideweather').text((data['weather']['curren_weather'][0]['weather_text']));
+
+		console.log(data['weather']['curren_weather'][0]['temp']);
+
+	})
+})
+</script>
 
 </body>
 

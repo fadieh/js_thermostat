@@ -178,3 +178,13 @@ body {
 	top: 253px;
 	left: 35px;
 }
+
+.outsidetemp {
+	color: white;
+	left: 10px;
+	top: 10px;
+	position: fixed;
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	font-size: 20px;
+}
